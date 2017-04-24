@@ -18,10 +18,10 @@ RUN mkdir -p $INSTALL_PATH
 # on Docker's website extensively.
 WORKDIR $INSTALL_PATH
 
-# Environment variables for Dockerized Rails apps
-ENV RAILS_ENV production
-ENV RAILS_SERVE_STATIC_FILES true
-ENV RAILS_LOG_TO_STDOUT true
+# (optional/recommended) Environment variables for Dockerized production Rails apps
+# ENV RAILS_ENV production
+# ENV RAILS_SERVE_STATIC_FILES true
+# ENV RAILS_LOG_TO_STDOUT true
 
 # Ensure gems are cached and only get updated when they change. This will
 # drastically increase build times when your gems do not change.
